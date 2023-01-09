@@ -1,4 +1,5 @@
-﻿using Nethereum.JsonRpc.Client;
+﻿using Nethereum.Hex.HexTypes;
+using Nethereum.JsonRpc.Client;
 using Nethereum.JsonRpc.Client.RpcMessages;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,11 @@ namespace EthBlocksIndexer.Csharp.Services.Models
 {
     public class AlchemyRpcResult
     {
-        public RpcRequest Request { get; set; }
-        public RpcResponseMessage Response { get; set; }
-        public int BlockNumber { get; set; }
-        public string BlockNumberHex { get; set; }
+        public int Id { get; set; }
+        //public RpcRequest Request { get; set; }
+        //public RpcResponseMessage Response { get; set; }
+        //public int BlockNumber { get; set; }
+        public string BlockNumberHex { get; set; }        
         public bool IsSuccess { get; set; }
     }
 }
